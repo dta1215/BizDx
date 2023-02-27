@@ -121,7 +121,43 @@ section:not(:first-child) {
     padding: 20px 60px;
 }
 
+.fixedHeader {
+    position: fixed;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0px 0px 15px rgb(21 21 21 / 35%);
+    transition: all .3s;
+    animation: fadeIn 0.3s linear forwards;
+}
 
+.fixedHeader .header_main {
+    border-bottom: none;
+}
+
+.fixedHeader .header_controls {
+    height: 50px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.banner_description_area {
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
 
 
 /* Bo giai phap tro xuong  */
